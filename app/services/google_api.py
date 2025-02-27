@@ -54,9 +54,7 @@ async def spreadsheets_update_value(
         ['Топ проектов по скорости закрытия'],
         ['Название проекта', 'Время сбора', 'Описание']
     ]
-    print(projects)
     for project in projects:
-        print(project)
         new_row = [
             str(project.name),
             str(project.close_date - project.create_date),
